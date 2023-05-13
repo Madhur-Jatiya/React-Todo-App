@@ -5,8 +5,8 @@ import Todos from "./MyComponents/Todos";
 
 function App() {
 
-  const onDelete = () => {
-    console.log("I am ondelete");
+  const onDelete = (todo) => {
+    console.log("I am ondelete of todo",todo);
   }
 
   let todos = [
@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <Header title="Madhur" />
-      <Todos todos={todos} onDelete = {onDelete}/>
+      <Todos todos={todos} onDelete={onDelete} />
       <Footer />
     </>
   );
