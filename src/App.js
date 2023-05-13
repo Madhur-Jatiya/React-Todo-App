@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <Header title="Madhur" />
+      <Header title="MyTodosList" />
       <Todos todos={todos} onDelete={onDelete} />
       <Footer />
     </>
