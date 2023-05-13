@@ -33,8 +33,8 @@ function App() {
   ]);
   return (
     <>
-      <Header title="Madhur" />
-      <Todos todos={todos} onDelete={onDelete} />
+      <Header title="MyTodo" />
+      <Todos todos={todos} onDelete={onDelete} /> 
       <Footer />
     </>
   );
