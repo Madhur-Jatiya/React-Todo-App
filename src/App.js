@@ -2,19 +2,14 @@ import './App.css';
 import Header from "./MyComponents/Header";
 import Footer from "./MyComponents/Footer";
 import Todos from "./MyComponents/Todos";
-import React, { useState } from 'react';
 
 function App() {
 
-  const onDelete = (todo) => {
-    console.log("I am ondelete", todo);
-
-    setTodos(todos.filter((e) => {
-      return e !== todo;
-    }))
+  const onDelete = () => {
+    console.log("I am ondelete");
   }
 
-  const [todos, setTodos] = useState([
+  let todos = [
     {
       sno: 1,
       title: "Study",
@@ -30,11 +25,11 @@ function App() {
       title: "Chat",
       desc: "Chatting time 10am-12am"
     },
-  ]);
+  ]
   return (
     <>
-      <Header title="MyTodo" />
-      <Todos todos={todos} onDelete={onDelete} /> 
+      <Header title="Madhur" />
+      <Todos todos={todos} onDelete = {onDelete}/>
       <Footer />
     </>
   );
